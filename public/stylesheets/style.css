@@ -1,0 +1,98 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image: url('../bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: #00B7FF;
+}
+
+#content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Ensure content is positioned relative */
+}
+
+#send-button {
+    background-color: #3498db;
+    color: #fff;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#room {
+    font-family: "Roboto Mono", monospace;
+    /*background-color:   #ecf0f1  ;*/
+    color : #E9967A;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 1em;
+    margin-right: 50px;
+    width: 150px;
+    height: 300px; /* Adjust height as needed */
+    position: absolute;
+    top: 0; /* Position at the top */
+    bottom: 0; /* Expand to the full height of the content */
+    left: 0; /* Position at the left */
+    overflow: auto;
+    border-radius: 8px;
+    padding-left: 4px;
+    padding-right: 8px;
+    padding-top: 10px;
+}
+
+#messages {
+    width: calc(100% - 120px); /* Adjust width to accommodate room list */
+    height: 300px; /* Ensure the same height as #room */
+    overflow: auto;
+    font-family: "Roboto Mono", monospace;
+    /*background-color: #1abc9c ;*/
+    color:    white  ;
+    margin-bottom: 1em;
+    margin-left: 110px; /* Ensure enough space for room list */
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    /*border: 1px solid  #1abc9c ;*/
+    border-radius: 8px;
+}
+
+
+#room-list {
+    width: 100px;
+    height: 300px;
+    overflow: auto;
+    position: absolute;
+    top: 0; /* Position at the top */
+    right: 0; /* Position at the right */
+}
+
+#room-list div {
+    border-bottom: 1px solid #eee;
+}
+
+#room-list div:hover {
+    background-color: #ddd;
+}
+
+#send-message {
+    width: 700px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+#help {
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    font-weight: bold;
+    color:  #f0f3f4;  
+}
+
+
+
